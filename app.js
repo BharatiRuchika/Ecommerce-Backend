@@ -84,6 +84,6 @@ app.use(function(err, req, res, next) {
 // app.listen(`${process.env.PORT}`,()=>console.log(`server started at ${process.env.PORT} in ${process.env.NODE_ENV}`
 // ));
  const PORT = 3000;
- app.listen(PORT,()=>console.log(`server started at ${PORT}`));
+ app.listen(process.env.PORT||3000,()=>console.log(`server started at ${process.env.PORT}`));
 // app.listen(3000,()=>console.log("Server started"))
 module.exports = app;
